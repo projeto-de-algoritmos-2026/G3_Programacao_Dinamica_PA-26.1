@@ -3,8 +3,15 @@ const presets = {
   "G-Virus": "ACGTGATCGAACGTTAGCAT",
   "Progenitor": "TGCAACCGTTAAGGCTTACC",
   "C-Virus": "TGCAACCGTTATGGCTTACC",
-  "Tyrant": "ACGTTAGCATCGTACGATTA",
   "Plague": "ACGTTAGCATCGTATGATTA"
+};
+
+const presetImages = {
+  "T-Virus": "assets/tvirus.png",
+  "G-Virus": "assets/gvirus.png",
+  "Progenitor": "assets/projenitorv.png",
+  "C-Virus": "assets/cvirus.png",
+  "Plague": "assets/plaga.png"
 };
 
 const dnaA = document.getElementById("dnaA");
@@ -98,7 +105,7 @@ function renderPresets() {
   Object.keys(presets).forEach((name) => {
     const btn = document.createElement("button");
     btn.className = "preset-btn";
-    btn.textContent = name;
+    btn.innerHTML = `${name} <img src="${presetImages[name]}" style="width:25px;">`;
     virusA = null;
     btn.addEventListener("click", () => {
       if (!dnaA.value) {
