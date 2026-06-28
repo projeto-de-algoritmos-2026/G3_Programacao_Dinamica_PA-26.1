@@ -16,7 +16,7 @@ O projeto utiliza o algoritmo de alinhamento de sequência **Needleman-Wunsch**,
 Acesse ele [aqui](https://projeto-de-algoritmos-2026.github.io/G3_Programacao_Dinamica_PA-26.1/).
 
 ## Vídeo
-Assista o vídeo de apresentação [aqui](Link).
+Assista o vídeo de apresentação [aqui](https://youtu.be/H-FgQXJRNWs).
 
 ## Algoritmo
 O **Needleman-Wunsch** é um algoritmo de alinhamento global que utiliza programação dinâmica para encontrar o melhor alinhamento entre duas sequências.
