@@ -99,10 +99,21 @@ function renderPresets() {
     const btn = document.createElement("button");
     btn.className = "preset-btn";
     btn.textContent = name;
+    virusA = null;
     btn.addEventListener("click", () => {
-      dnaA.value = presets[name];
-      dnaB.value = "";
-      resultBox.innerHTML = `<h3>Resultado</h3><p>Amostra carregada. Digite ou selecione outra sequência para comparar.</p>`;
+      if (!dnaA.value) {
+        dnaA.value = presets[name];
+        resultBox.innerHTML = `<h3>Resultado</h3><p>Amostra A (${name}) carregada. Selecione uma amostra para B ou digite uma sequência.</p>`;
+        virusA = name;
+      } else if (!dnaB.value) {
+        dnaB.value = presets[name];
+        resultBox.innerHTML = `<h3>Resultado</h3><p>Amostra A (${virusA}) e amostra B (${name}) carregadas. Clique em 'Comparar' para ver o resultado.</p>`;
+      } else {
+        dnaA.value = presets[name];
+        dnaB.value = "";
+        resultBox.innerHTML = `<h3>Resultado</h3><p>Amostra A alterada para ${name}. Selecione uma amostra para B.</p>`;
+        virusA = name;
+      }
     });
     presetRow.appendChild(btn);
   });

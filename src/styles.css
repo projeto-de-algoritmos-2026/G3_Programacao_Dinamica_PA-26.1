@@ -25,17 +25,27 @@ body {
 }
 
 .hero {
+  height: 150px;
   background: rgba(18, 23, 35, 0.95);
   border: 1px solid var(--border);
   border-radius: 18px;
   padding: 24px 28px;
   margin-bottom: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
 }
 
 h1 {
-  margin: 0 0 8px;
+  margin: 0;
   font-size: 28px;
+  flex: 1;
+  text-align: center;
 }
 
 .subtitle {
@@ -62,6 +72,10 @@ label {
   display: block;
   font-weight: bold;
   margin-bottom: 8px;
+}
+
+.dna {
+  width: 20px;
 }
 
 textarea {
