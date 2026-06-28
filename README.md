@@ -11,6 +11,10 @@ O projeto utiliza o algoritmo de alinhamento de sequência **Needleman-Wunsch**,
 
 ![Print do site](assets/print.png)
 
+## Site
+
+Acesse ele [aqui](https://projeto-de-algoritmos-2026.github.io/G3_Programacao_Dinamica_PA-26.1/).
+
 ## Vídeo
 Assista o vídeo de apresentação [aqui](Link).
 
