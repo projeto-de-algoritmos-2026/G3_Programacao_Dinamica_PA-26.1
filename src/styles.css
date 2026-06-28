@@ -1,0 +1,150 @@
+:root {
+  --bg: #06070d;
+  --panel: #121723;
+  --panel-2: #171d2d;
+  --border: #3f4456;
+  --text: #f2f5ff;
+  --muted: #98a2b8;
+  --accent: #b71c1c;
+  --accent-2: #2e7d32;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #04050a, #101522);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.hero {
+  background: rgba(18, 23, 35, 0.95);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 24px 28px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: rgba(18, 23, 35, 0.95);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 110px;
+  background: var(--panel-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  resize: vertical;
+  font-family: Consolas, monospace;
+  font-size: 15px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+button {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.primary { background: var(--accent); }
+.secondary { background: #234a6d; }
+.preset-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.preset-btn {
+  background: #1f2940;
+  color: var(--text);
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.result-box {
+  margin-top: 16px;
+  background: #0b1018;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.result-box h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.metric {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 8px 10px;
+  background: #121a2b;
+  min-width: 140px;
+}
+
+.mono {
+  font-family: Consolas, monospace;
+  white-space: pre-wrap;
+  word-break: break-all;
+  line-height: 1.6;
+  color: #dce4ff;
+}
+
+@media (max-width: 860px) {
+  .grid { grid-template-columns: 1fr; }
+}
